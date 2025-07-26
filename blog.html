@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Moon-Islandホームページ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE WEB SITE"></a></h1>
+<aside id="mainimg">
+<img src="images/1.jpg" alt="">
+</aside>
+</header>
+
+<div id="contents">
+
+<div id="main">
+
+<section>
+
+<h2>ブログのページ</h2>
+
+<h3>20210814 Website開設の儀</h3>
+<p>このサイトの仕組み<br>
+
+このサイトのホームページはX-serverというレンタルサーバーの無料の領域を使わせていただいて公開しています。<br>
+<br>
+サイトをデザインしているプログラムは標準的に使われているWORDPRESSではなく、レスポンシブHTMLというものでプログラムのコードを書いていて、例えば写真をひとつ入れ換えるたびに付属するテキストも一緒に書き直さなければならないというものです。<br>
+<br>
+ではなぜ一見時代遅れとも言えるやり方でホームページを作っているかというと、コードを書くとどういう具合に画面に反映されるかという様子とデータの構造がつかみやすいところと、データをサーバーにアップするという一連の作業の流れを身体に覚えこませ習慣化したかったからです。<br>
+<br>
+そもそもこのホームページのテンプレートはフリーのものを少し加工して使わせてもらっていますし、画像の特殊効果を実装するJAVAスクリプトの部分は全くのブラックボックスです。<br>
+<br>
+それでも、基本的にHTMLでコードを書いているとはいえ、表現力が高くて見栄えもスッキリしているので、テンプレートの基本デザインの質が非常に高いと思いませんか。<br>
+<br>
+とはいえ、これからホームページを作ってみたいという方にはコードから書くことはお勧めしませんので、簡単に使い始めることができる無料のホームページやブログサイトもありますので、ご自身の作品や考えを公開するという目的だけのためならば、わざわざ遠回りする必要はほとんどありません。<br>
+<br>
+そんなこともあって、ときおり写真と文章がかみ合わないとか、そういうことも起こってくるでしょうが、どうか暖かい目で見ていただきたいと思います。</p>
+<br>
+
+</section>
+
+
+</div>
+<!--/#main-->
+
+<div id="sub">
+
+<!--PC用（801px以上端末）メニュー-->
+<nav id="menubar">
+<h2>Contents</h2>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="blog.html">BLOG</a></li>
+<li><a href="link.html">LINK</a></li>
+</ul>
+</nav>
+
+<p><a href="#"><img src="images/banner1.jpg" alt="採用情報" class="pc"></a>
+<a href="#"><img src="images/banner1_sh.jpg" alt="採用情報" class="sh"></a></p>
+<p>上のバナー画像は、PCやタブレットとスマホとで画像２種類が切り替わります。<br>
+<a href="about.html#banner">詳しい説明はこちら。</a></p>
+
+</div>
+<!--/#sub-->
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">Moon-Island</a> All Rights Reserved.</small>
+<span class="pr"><a href="http://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+<!--小さな端末用（800px以下端末）メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="blog.html">BLOG</a></li>
+<li><a href="link.html">LINK</a></li>
+</ul>
+</nav>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+<!--メニューの開閉処理条件設定　800px以下-->
+<script>
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+</html>
